@@ -3,3 +3,5 @@
 .idea
 .eslintrc
 .travis.yml
+**/project.xcworkspace/
+**/xcuserdata/
