@@ -7,20 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2858ECCA1F8B91B400610575 /* RNVersionNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNVersionNumber.m */; };
-		B3E7B58A1CC2AC0600A0062D /* RNVersionNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNVersionNumber.m */; };
+		B3E7B58A1CC2AC0600A0062D /* RNVersionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNVersionInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2858ECCC1F8B91B400610575 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,20 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		134814201AA4EA6300B7C361 /* libRNVersionNumber.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNVersionNumber.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2858ECD01F8B91B400610575 /* libRNVersionNumber-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libRNVersionNumber-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5881CC2AC0600A0062D /* RNVersionNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNVersionNumber.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* RNVersionNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNVersionNumber.m; sourceTree = "<group>"; };
+		134814201AA4EA6300B7C361 /* libRNVersionInfo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNVersionInfo.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E7B5881CC2AC0600A0062D /* RNVersionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNVersionInfo.h; sourceTree = "<group>"; };
+		B3E7B5891CC2AC0600A0062D /* RNVersionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNVersionInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2858ECCB1F8B91B400610575 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		58B511D81A9E6C8500147676 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,7 +42,7 @@
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				134814201AA4EA6300B7C361 /* libRNVersionNumber.a */,
+				134814201AA4EA6300B7C361 /* libRNVersionInfo.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,36 +50,18 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				B3E7B5881CC2AC0600A0062D /* RNVersionNumber.h */,
-				B3E7B5891CC2AC0600A0062D /* RNVersionNumber.m */,
+				B3E7B5881CC2AC0600A0062D /* RNVersionInfo.h */,
+				B3E7B5891CC2AC0600A0062D /* RNVersionInfo.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
-				2858ECD01F8B91B400610575 /* libRNVersionNumber-tvOS.a */,
 			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2858ECC81F8B91B400610575 /* RNVersionNumber-tvOS */ = {
+		58B511DA1A9E6C8500147676 /* RNVersionInfo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2858ECCD1F8B91B400610575 /* Build configuration list for PBXNativeTarget "RNVersionNumber-tvOS" */;
-			buildPhases = (
-				2858ECC91F8B91B400610575 /* Sources */,
-				2858ECCB1F8B91B400610575 /* Frameworks */,
-				2858ECCC1F8B91B400610575 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "RNVersionNumber-tvOS";
-			productName = RCTDataManager;
-			productReference = 2858ECD01F8B91B400610575 /* libRNVersionNumber-tvOS.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		58B511DA1A9E6C8500147676 /* RNVersionNumber */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNVersionNumber" */;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNVersionInfo" */;
 			buildPhases = (
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
@@ -107,9 +71,9 @@
 			);
 			dependencies = (
 			);
-			name = RNVersionNumber;
+			name = RNVersionInfo;
 			productName = RCTDataManager;
-			productReference = 134814201AA4EA6300B7C361 /* libRNVersionNumber.a */;
+			productReference = 134814201AA4EA6300B7C361 /* libRNVersionInfo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -119,14 +83,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = Facebook;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					58B511DA1A9E6C8500147676 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
-			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNVersionNumber" */;
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNVersionInfo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -138,66 +102,23 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58B511DA1A9E6C8500147676 /* RNVersionNumber */,
-				2858ECC81F8B91B400610575 /* RNVersionNumber-tvOS */,
+				58B511DA1A9E6C8500147676 /* RNVersionInfo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2858ECC91F8B91B400610575 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2858ECCA1F8B91B400610575 /* RNVersionNumber.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		58B511D71A9E6C8500147676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E7B58A1CC2AC0600A0062D /* RNVersionNumber.m in Sources */,
+				B3E7B58A1CC2AC0600A0062D /* RNVersionInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2858ECCE1F8B91B400610575 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
-				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		2858ECCF1F8B91B400610575 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
-				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		58B511ED1A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -284,7 +205,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNVersionNumber;
+				PRODUCT_NAME = RNVersionInfo;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -301,7 +222,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNVersionNumber;
+				PRODUCT_NAME = RNVersionInfo;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -309,16 +230,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2858ECCD1F8B91B400610575 /* Build configuration list for PBXNativeTarget "RNVersionNumber-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2858ECCE1F8B91B400610575 /* Debug */,
-				2858ECCF1F8B91B400610575 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNVersionNumber" */ = {
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNVersionInfo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511ED1A9E6C8500147676 /* Debug */,
@@ -327,7 +239,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNVersionNumber" */ = {
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNVersionInfo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511F01A9E6C8500147676 /* Debug */,
