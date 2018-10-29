@@ -1,8 +1,9 @@
-/* @flow */
-
+/**
+ * @providesModule react-native-version-info
+ */
 import { NativeModules } from 'react-native';
 
-const { RNVersionNumber } = NativeModules;
+const { RNVersionInfo } = NativeModules;
 
 type VersionObject = {
   appVersion: ?string,
@@ -10,10 +11,10 @@ type VersionObject = {
   bundleIdentifier: ?string
 };
 
-const VersionNumber: VersionObject = {
-  appVersion: RNVersionNumber && RNVersionNumber.appVersion,
-  buildVersion: RNVersionNumber && RNVersionNumber.buildVersion,
-  bundleIdentifier: RNVersionNumber && RNVersionNumber.bundleIdentifier
+const VersionInfo: VersionObject = {
+  appVersion: RNVersionInfo && RNVersionInfo.appVersion,
+  buildVersion: RNVersionInfo && RNVersionInfo.buildVersion,
+  bundleIdentifier: RNVersionInfo && RNVersionInfo.bundleIdentifier
 };
 
-export default VersionNumber;
+export default VersionInfo;
