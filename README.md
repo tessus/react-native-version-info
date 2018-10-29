@@ -1,97 +1,111 @@
+# react-native-version-info
 
-# react-native-version-number
+[![npm](https://img.shields.io/npm/v/react-native-version-info.svg?style=flat&colorB=CB3837)](https://www.npmjs.com/package/react-native-version-info)
+[![Build Status](https://travis-ci.org/tessus/react-native-version-info.svg?branch=master)](https://travis-ci.org/tessus/react-native-version-info)
 
-<p>
-<img src="https://travis-ci.org/APSL/react-native-version-number.svg?branch=master" />
-<img src="https://img.shields.io/npm/dm/react-native-version-number.svg" />
-<img src="https://img.shields.io/npm/dt/react-native-version-number.svg" />
-</p>
+<!--
+<img src="https://img.shields.io/npm/dm/react-native-version-info.svg" />
+<img src="https://img.shields.io/npm/dt/react-native-version-info.svg" />
+-->
 
-Returns the `CFBundleShortVersionString` and the `CFBundleVersion` and `bundleIdentifier` on IOS. For Android, returns the `versionName`, `versionCode` and `applicationId`.
+Returns `CFBundleShortVersionString`, `CFBundleVersion`, and `CFBundleIdentifier` on IOS. For Android, returns `versionName`, `versionCode`, and `applicationId`.
 
+|                  | Android         | iOS                          | Example            |
+| ---------------- | --------------- | ---------------------------- | ------------------ |
+| appVersion       | `versionName`   | `CFBundleShortVersionString` | `1.0.2`            |
+| buildVersion     | `versionCode`   | `CFBundleVersion`            | `42`               |
+| bundleIdentifier | `applicationId` | `CFBundleIdentifier`         | `com.foo.bar.MyApp`|
 
-|  | iOS | Android | Example |
-| --- | --- | --- | --- |
-| appVersion | `CFBundleShortVersionString` | `versionName` | `1.0.2` |
-| buildVersion | `CFBundleVersion` | `versionCode` | `42` |
-| bundleIdentifier | `bundleIdentifier` | `applicationId` | `com.foo.bar.MyApp`|
+## Installation
 
+Using npm:
 
-## Getting started
+```shell
+npm install react-native-version-info
+```
 
-Install the package
+or using yarn:
 
-`$ yarn add react-native-version-number`
+```shell
+yarn add react-native-device-info
+```
 
-Link
+## Linking
 
-`$ react-native link react-native-version-number`
+### Automatic
 
-#### Manual installation  
+```shell
+react-native link react-native-version-info
+```
 
-**Android:**
+### Manual
+
+#### Android
 
 1. In your android/settings.gradle file, make the following additions:
-```java
-include ':react-native-version-number'   
-project(':react-native-version-number').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-version-number/android')
-```
 
-2. In your android/app/build.gradle file, add the `:react-native-version-number` project as a compile-time dependency:
+	```java
+	include ':react-native-version-info'
+	project(':react-native-version-info').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-version-info/android')
+	```
 
-```java
-...
-dependencies {
-    ...
-    compile project(':react-native-version-number')
-}
-```
+2. In your android/app/build.gradle file, add the `:react-native-version-info` project as a compile-time dependency:
 
-3. Update the MainApplication.java file to use `react-native-version-number` via the following changes:   
+	```java
+	...
+	dependencies {
+	    ...
+	    compile project(':react-native-version-info')
+	}
+	```
 
-```java
-import com.apsl.versionnumber.RNVersionNumberPackage;
+3. Update the MainApplication.java file to use `react-native-version-info` via the following changes:
 
-public class MainApplication extends Application implements ReactApplication {
+	```java
+	import cx.evermeet.versioninfo.RNVersionInfoPackage;
 
-    private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
-        ...
-        @Override
-        protected List<ReactPackage> getPackages() {
-            return Arrays.<ReactPackage>asList(
-                    new MainReactPackage(),
-                    new RNVersionNumberPackage(), // here
-            );
-        }
-    };
-    ...
-}
-```
+	public class MainApplication extends Application implements ReactApplication {
 
-**iOS**
+	    private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
+	        ...
+	        @Override
+	        protected List<ReactPackage> getPackages() {
+	            return Arrays.<ReactPackage>asList(
+	                    new MainReactPackage(),
+	                    new RNVersionInfoPackage(), // here
+	            );
+	        }
+	    };
+	    ...
+	}
+	```
+
+#### iOS
 
 In XCode, in the project navigator:
 
-    Right click Libraries
-    Add Files to [your project's name]
-    Go to `node_modules/react-native-version-number`
-    Add the .xcodeproj file
+- Right click _Libraries_
+- Add Files to _[your project's name]_
+- Go to `node_modules/react-native-version-info/ios`
+- Add the `.xcodeproj` file
 
 In XCode, in the project navigator, select your project.
 
-    Add the `libRNVersionNumber.a` from the deviceinfo project to your project's Build Phases ➜ Link Binary With Libraries
-    Click .xcodeproj file you added before in the project navigator and go the Build Settings tab. Make sure All is toggled on (instead of Basic).
-    Add header search path: `$(SRCROOT)/../node_modules/react-native-version-number/ios`
+- Add the `libRNVersionInfo.a` (in subdir `Products`) from the _VersionInfo_ project to your project's _Build Phases ➜ Link Binary With Libraries_ (Note: the library file does not exist yet, thus it will show up as red.)
+- Click `.xcodeproj` file you added before in the project navigator and go the _Build Settings_ tab. Make sure _All_ is toggled on (instead of _Basic_).
+- Look for _Header Search Paths_ and make sure it contains both `$(SRCROOT)/../react-native/React` and `$(SRCROOT)/../../React`
+- Add header search path: `$(SRCROOT)/../node_modules/react-native-version-info/ios`
 
 ## Usage
+
 ```javascript
-import VersionNumber from 'react-native-version-number';
+import VersionInfo from 'react-native-version-info';
 
-console.log(VersionNumber.appVersion);
-console.log(VersionNumber.buildVersion);
-console.log(VersionNumber.bundleIdentifier);
-
+console.log(VersionInfo.appVersion);
+console.log(VersionInfo.buildVersion);
+console.log(VersionInfo.bundleIdentifier);
 ```
 
 ## License
-MIT.
+
+MIT
