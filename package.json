@@ -1,6 +1,6 @@
 {
   "name": "react-native-version-info",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Access native app version in React Native",
   "main": "index.js",
   "typings": "./index.d.ts",
@@ -12,8 +12,20 @@
     "type": "git",
     "url": "https://github.com/tessus/react-native-version-info.git"
   },
-  "tags": ["react", "react-native", "react-component", "android", "ios"],
-  "keywords": ["react", "react-native", "android", "ios", "react-component"],
+  "tags": [
+    "react",
+    "react-native",
+    "react-component",
+    "android",
+    "ios"
+  ],
+  "keywords": [
+    "react",
+    "react-native",
+    "android",
+    "ios",
+    "react-component"
+  ],
   "author": "Helmut K. C. Tessarek <tessarek@evermeet.cx>",
   "license": "MIT",
   "bugs": {
