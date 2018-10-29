@@ -19,7 +19,6 @@
   "bugs": {
     "url": "https://github.com/tessus/react-native-version-info/issues"
   },
-  "homepage": "https://github.com/tessus/react-native-version-info#readme",
   "devDependencies": {
     "babel-eslint": "^6.1.2",
     "eslint": "^3.3.1",
