@@ -4,8 +4,7 @@
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true,
-      "modules": true,
-      "experimentalObjectRestSpread": true
+      "modules": true
     }
   },
 
@@ -148,7 +147,8 @@
     "brace-style": 0,
     "camelcase": 0,
     "consistent-this": [1, "self"],
-    "eol-last": 1,
+    "eol-last": ["error", "always"],
+    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 0 }],
     "func-names": 0,
     "func-style": 0,
     "new-cap": 0,
