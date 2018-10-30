@@ -45,9 +45,13 @@ local.properties
 node_modules
 *.log
 .nvm
+package-lock.json
 
 # OS X
 .DS_Store
 
 # Test generated files
 /ReactAndroid/src/androidTest/assets/AndroidTestBundle.js
+
+# Misc
+*~
