@@ -4,8 +4,8 @@
 [![Build Status](https://travis-ci.org/tessus/react-native-version-info.svg?branch=master)](https://travis-ci.org/tessus/react-native-version-info)
 
 <!--
-<img src="https://img.shields.io/npm/dm/react-native-version-info.svg" />
-<img src="https://img.shields.io/npm/dt/react-native-version-info.svg" />
+![Downloads per month](https://img.shields.io/npm/dm/react-native-version-info.svg?colorB=blue)
+![Downloads total](https://img.shields.io/npm/dt/react-native-version-info.svg?colorB=blue)
 -->
 
 Returns `CFBundleShortVersionString`, `CFBundleVersion`, and `CFBundleIdentifier` on IOS. For Android, returns `versionName`, `versionCode`, and `applicationId`.
@@ -55,7 +55,7 @@ react-native link react-native-version-info
 	...
 	dependencies {
 	    ...
-	    compile project(':react-native-version-info')
+	    implementation project(':react-native-version-info')
 	}
 	```
 
