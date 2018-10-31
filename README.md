@@ -27,7 +27,7 @@ npm install react-native-version-info
 or using yarn:
 
 ```shell
-yarn add react-native-device-info
+yarn add react-native-version-info
 ```
 
 ## Linking
