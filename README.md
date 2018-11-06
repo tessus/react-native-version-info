@@ -8,13 +8,13 @@
 ![Downloads total](https://img.shields.io/npm/dt/react-native-version-info.svg?colorB=blue)
 -->
 
-Returns `CFBundleShortVersionString`, `CFBundleVersion`, and `CFBundleIdentifier` on IOS. For Android, returns `versionName`, `versionCode`, and `applicationId`.
+Returns `CFBundleShortVersionString`, `CFBundleVersion`, and `CFBundleIdentifier` on IOS. For Android, returns `versionName`, `versionCode`, and `applicationId`. And For Windows, returns the `version` properties `major, minor, and build` numbers as the appVersion, the `revision` number as the version, and the `name` property as the bundleIdentifier.
 
-|                  | Android         | iOS                          | Example            |
-| ---------------- | --------------- | ---------------------------- | ------------------ |
-| appVersion       | `versionName`   | `CFBundleShortVersionString` | `1.0.2`            |
-| buildVersion     | `versionCode`   | `CFBundleVersion`            | `42`               |
-| bundleIdentifier | `applicationId` | `CFBundleIdentifier`         | `com.foo.bar.MyApp`|
+|                  | Android         | iOS                          | Windows			   |Example             |
+| ---------------- | --------------- | ---------------------------- | -------------------- | ------------------ |
+| appVersion       | `versionName`   | `CFBundleShortVersionString` | `Identity[version]`  | `1.0.2`            |
+| buildVersion     | `versionCode`   | `CFBundleVersion`            | `Identity[version]`  | `42`               |
+| bundleIdentifier | `applicationId` | `CFBundleIdentifier`         | `Identity[name]`	   | `com.foo.bar.MyApp`|
 
 ## Installation
 
@@ -93,6 +93,27 @@ In XCode, in the project navigator, select your project.
 
 - Add the `libRNVersionInfo.a` (in subdir `Products`) from the _VersionInfo_ project to your project's _Build Phases ➜ Link Binary With Libraries_ (Note: the library file does not exist yet, thus it will show up as red.)
 - Click the `.xcodeproj` file you added before in the project navigator and go the _Build Settings_ tab. Make sure _All_ is toggled on (instead of _Basic_). Look for _Header Search Paths_ and make sure it contains both `$(SRCROOT)/../react-native/React` and `$(SRCROOT)/../../React`
+
+**Windows**
+
+1. In your windows/{app_name}/MainReactNativeHost file add the RNVersionInfo package to the package list
+
+```c#
+using Com.Apsl.VersionNumber;
+...
+protected override List<IReactPackage> Packages => new List<IReactPackage>
+{
+	...
+    new RNVersionInfoPackage(),   
+};
+```
+
+2. Add RNVersionInfo to your solution
+
+3. Add RNVersionInfo to your ReactNative project's references
+
+For a step by step guide visit:
+https://github.com/Microsoft/react-native-windows/blob/master/docs/LinkingLibrariesWindows.md
 
 ## Usage
 
