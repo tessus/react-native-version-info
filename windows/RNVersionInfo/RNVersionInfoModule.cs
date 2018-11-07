@@ -22,11 +22,10 @@ namespace CX.Evermeet.Versioninfo
             get
             {
                 return "RNVersionInfo";
-
             }
         }
 
-        
+
         public override IReadOnlyDictionary<string, object> Constants
         {
             get
@@ -34,10 +33,10 @@ namespace CX.Evermeet.Versioninfo
                 PackageId appInfo = Package.Current.Id;
                 PackageVersion versionInfo = appInfo.Version;
 
-                String appVersion = versionInfo.Major.ToString() + 
-                                    versionInfo.Minor.ToString() + 
+                String appVersion = versionInfo.Major.ToString() +
+                                    versionInfo.Minor.ToString() +
                                     versionInfo.Build.ToString();
-                
+
                 String appBuild = versionInfo.Revision.ToString();
 
                 return new Dictionary<string, object>
@@ -48,6 +47,5 @@ namespace CX.Evermeet.Versioninfo
                 };
             }
         }
-
     }
 }
