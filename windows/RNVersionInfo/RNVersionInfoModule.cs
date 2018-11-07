@@ -5,7 +5,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Core;
 using Windows.UI.Core;
 
-namespace CX.Evermeet.Versioninfo
+namespace cx.evermeet.versioninfo
 {
     class RNVersionInfoModule : ReactContextNativeModuleBase
     {

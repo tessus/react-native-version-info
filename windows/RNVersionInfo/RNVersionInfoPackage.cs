@@ -4,7 +4,7 @@ using ReactNative.UIManager;
 using System;
 using System.Collections.Generic;
 
-namespace CX.Evermeet.Versioninfo
+namespace cx.evermeet.versioninfo
 {
     /// <summary>
     /// Package defining core framework modules (e.g., <see cref="UIManagerModule"/>).
