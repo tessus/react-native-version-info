@@ -94,23 +94,23 @@ In XCode, in the project navigator, select your project.
 - Add the `libRNVersionInfo.a` (in subdir `Products`) from the _VersionInfo_ project to your project's _Build Phases ➜ Link Binary With Libraries_ (Note: the library file does not exist yet, thus it will show up as red.)
 - Click the `.xcodeproj` file you added before in the project navigator and go the _Build Settings_ tab. Make sure _All_ is toggled on (instead of _Basic_). Look for _Header Search Paths_ and make sure it contains both `$(SRCROOT)/../react-native/React` and `$(SRCROOT)/../../React`
 
-**Windows**
+#### Windows
 
-1. In your windows/{app_name}/MainReactNativeHost file add the RNVersionInfo package to the package list
+1. In your `windows/{app_name}/MainReactNativeHost` file add the `RNVersionInfo` package to the package list:
 
-```c#
-using Com.Apsl.VersionNumber;
-...
-protected override List<IReactPackage> Packages => new List<IReactPackage>
-{
+	```c#
+	using cx.evermeet.versioninfo;
 	...
-    new RNVersionInfoPackage(),   
-};
-```
+	protected override List<IReactPackage> Packages => new List<IReactPackage>
+	{
+	    ...
+	    new RNVersionInfoPackage(),
+	};
+	```
 
-2. Add RNVersionInfo to your solution
+2. Add `RNVersionInfo` to your solution
 
-3. Add RNVersionInfo to your ReactNative project's references
+3. Add `RNVersionInfo` to your ReactNative project's references
 
 For a step by step guide visit:
 https://github.com/Microsoft/react-native-windows/blob/master/docs/LinkingLibrariesWindows.md
