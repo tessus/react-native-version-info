@@ -7,8 +7,8 @@
     <ProjectGuid>{33AD2B30-C8B6-11E8-9A85-A9683DEA46B4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Version.Number</RootNamespace>
-    <AssemblyName>Version.Number</AssemblyName>
+    <RootNamespace>Version.Info</RootNamespace>
+    <AssemblyName>Version.Info</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.17763.0</TargetPlatformVersion>
