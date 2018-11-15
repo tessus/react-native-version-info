@@ -8,13 +8,13 @@
 ![Downloads total](https://img.shields.io/npm/dt/react-native-version-info.svg?colorB=blue)
 -->
 
-Returns `CFBundleShortVersionString`, `CFBundleVersion`, and `CFBundleIdentifier` on IOS. For Android, returns `versionName`, `versionCode`, and `applicationId`. And For Windows, returns the `version` properties `major, minor, and build` numbers as the appVersion, the `revision` number as the version, and the `name` property as the bundleIdentifier.
+Returns `CFBundleShortVersionString`, `CFBundleVersion`, and `CFBundleIdentifier` on iOS. For Android, returns `versionName`, `versionCode`, and `applicationId`. For Windows, returns the `version` properties `major, minor, and build` numbers as the appVersion, the `revision` number as the buildVersion, and the `name` property as the bundleIdentifier.
 
-|                  | Android         | iOS                          | Windows			   |Example             |
+|                  | Android         | iOS                          | Windows              | Example            |
 | ---------------- | --------------- | ---------------------------- | -------------------- | ------------------ |
 | appVersion       | `versionName`   | `CFBundleShortVersionString` | `Identity[version]`  | `1.0.2`            |
-| buildVersion     | `versionCode`   | `CFBundleVersion`            | `Identity[version]`  | `42`               |
-| bundleIdentifier | `applicationId` | `CFBundleIdentifier`         | `Identity[name]`	   | `com.foo.bar.MyApp`|
+| buildVersion     | `versionCode`   | `CFBundleVersion`            | `Identity[revision]` | `42`               |
+| bundleIdentifier | `applicationId` | `CFBundleIdentifier`         | `Identity[name]`     | `com.foo.bar.MyApp`|
 
 ## Installation
 
