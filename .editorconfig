@@ -1,0 +1,26 @@
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+
+[*.{js,m,java,cs,h}]
+indent_style = tab
+indent_size = 4
+tab_width = 4
+
+[Makefile]
+indent_style = tab
+
+[.travis.yml]
+indent_style = space
+indent_size = 2
+
+[*.json]
+indent_style = space
+indent_size = 2
+
+[build.gradle]
+indent_style = space
+indent_size = 4
