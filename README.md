@@ -115,6 +115,12 @@ In XCode, in the project navigator, select your project.
 For a step by step guide visit:
 https://github.com/Microsoft/react-native-windows/blob/master/docs/LinkingLibrariesWindows.md
 
+## FAQ
+
+### Why the jump from version `0.6.2` to `1.0.0`?
+
+The package is considered stable. To follow the [semantic versioning](https://semver.org/) specification the version had to be set to `1.0.0`.
+
 ## Usage
 
 ```javascript
