@@ -1,6 +1,6 @@
 {
   "name": "react-native-version-info",
-  "version": "0.6.2",
+  "version": "1.0.0",
   "description": "Access native app version in React Native",
   "main": "index.js",
   "typings": "./index.d.ts",
