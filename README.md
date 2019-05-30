@@ -38,6 +38,8 @@ yarn add react-native-version-info
 react-native link react-native-version-info
 ```
 
+**iOS:** If you are using pods in your project, don't forget to run `pod update`.
+
 ### Manual
 
 #### Android
@@ -120,6 +122,11 @@ https://github.com/Microsoft/react-native-windows/blob/master/docs/LinkingLibrar
 ### Why the jump from version `0.6.2` to `1.0.0`?
 
 The package is considered stable. To follow the [semantic versioning](https://semver.org/) specification the version had to be set to `1.0.0`.
+
+### Why does Automatic Linking not work for iOS?
+
+It does. However, please be aware of the following (from the [react-native documentation](https://facebook.github.io/react-native/docs/linking-libraries-ios#automatic-linking)): *If your iOS project is using CocoaPods (contains Podfile) and linked library has podspec file, then react-native link will link library using Podfile.*
+In such a case, don't forget to run `pod update`.
 
 ## Usage
 
