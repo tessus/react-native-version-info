@@ -32,8 +32,8 @@
     "url": "https://github.com/tessus/react-native-version-info/issues"
   },
   "devDependencies": {
-    "babel-eslint": "^6.1.2",
-    "eslint": "^3.3.1",
-    "eslint-plugin-react": "^6.1.2"
+    "babel-eslint": "^10.0.2",
+    "eslint": "^4.18.2",
+    "eslint-plugin-react": "^7.14.2"
   }
 }
