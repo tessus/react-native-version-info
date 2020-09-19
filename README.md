@@ -117,6 +117,10 @@ In XCode, in the project navigator, select your project.
 For a step by step guide visit:
 https://github.com/Microsoft/react-native-windows/blob/master/docs/LinkingLibrariesWindows.md
 
+## Changelog
+
+A Changelog is included in the package, but also [available for viewing](https://github.com/tessus/react-native-version-info/blob/master/CHANGELOG.md) in the repo on GitHub.
+
 ## FAQ
 
 ### Why the jump from version `0.6.2` to `1.0.0`?
