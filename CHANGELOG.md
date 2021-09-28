@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.1.1] - 2021-09-29
 ### Fixed
-- all types are any, but should be string. fix by [GregoryEsberci](https://github.com/GregoryEsberci)
+- all types are any, but should be string. fix by [@GregoryEsberci](https://github.com/GregoryEsberci)
 
 ## [1.1.0] - 2020-09-19
 ### Added
