@@ -2,6 +2,7 @@
 .github
 .idea
 .eslintrc
+.eslintignore
 .travis.yml
 .editorconfig
 **/project.xcworkspace/
