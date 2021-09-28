@@ -1,7 +1,7 @@
 # react-native-version-info
 
 [![npm](https://img.shields.io/npm/v/react-native-version-info.svg?style=flat&colorB=CB3837)](https://www.npmjs.com/package/react-native-version-info)
-[![Build Status](https://travis-ci.org/tessus/react-native-version-info.svg?branch=master)](https://travis-ci.org/tessus/react-native-version-info)
+![Build Status](https://github.com/tessus/react-native-version-info/actions/workflows/node.js.yml/badge.svg)
 
 <!--
 ![Downloads per month](https://img.shields.io/npm/dm/react-native-version-info.svg?colorB=blue)
