@@ -1,7 +1,7 @@
-declare module 'react-native-version-info' {
-  export default {
-    appVersion: string,
-    buildVersion: string,
-    bundleIdentifier: string
-  }
+declare namespace ReactNativeVersionInfo {
+  export const appVersion: string;
+  export const buildVersion: string;
+  export const bundleIdentifier: string
 }
+
+export default ReactNativeVersionInfo;
