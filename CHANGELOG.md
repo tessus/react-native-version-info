@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.1] - 2021-09-29
+### Fixed
+- all types are any, but should be string. fix by [GregoryEsberci](https://github.com/GregoryEsberci)
+
 ## [1.1.0] - 2020-09-19
 ### Added
 - Xcode 12 compatibility by [@radko93](https://github.com/radko93).
@@ -72,7 +76,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Android gradle build script by [@lxcid](https://github.com/lxcid)
 
-[Unreleased]: https://github.com/tessus/react-native-version-info/compare/1.1.0...HEAD
+[Unreleased]: https://github.com/tessus/react-native-version-info/compare/1.1.1...HEAD
+[1.1.1]: https://github.com/tessus/react-native-version-info/compare/1.1.0...1.1.1
 [1.1.0]: https://github.com/tessus/react-native-version-info/compare/1.0.1...1.1.0
 [1.0.1]: https://github.com/tessus/react-native-version-info/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/tessus/react-native-version-info/compare/0.6.2...1.0.0
