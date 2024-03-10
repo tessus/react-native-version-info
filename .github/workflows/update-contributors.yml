@@ -1,0 +1,13 @@
+name: Update CONTRIBUTORS file
+on:
+  workflow_dispatch:
+  pull_request:
+    types:
+      - closed
+jobs:
+  update_contributors:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.pull_request.merged }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update Contributors
+        uses: tessus/update-contributors-list@v3
