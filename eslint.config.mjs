@@ -41,7 +41,6 @@ export default defineConfig([globalIgnores(["**/*.ts"]), {
             XMLHttpRequest: false,
             pit: false,
             FormData: true,
-			requireConfigFile: false,
         },
 
         parser: babelParser,
@@ -49,6 +48,12 @@ export default defineConfig([globalIgnores(["**/*.ts"]), {
         sourceType: "commonjs",
 
         parserOptions: {
+			requireConfigFile: false,
+			babelOptions: {
+				babelrc: false,
+				configFile: false,
+				presets: ["@babel/preset-env"],
+			},
             ecmaFeatures: {
                 jsx: true,
                 modules: true,
