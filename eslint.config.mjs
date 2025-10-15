@@ -48,6 +48,7 @@ export default defineConfig([globalIgnores(["**/*.ts"]), {
         sourceType: "commonjs",
 
         parserOptions: {
+			sourceType: "module",
 			requireConfigFile: false,
 			babelOptions: {
 				babelrc: false,
