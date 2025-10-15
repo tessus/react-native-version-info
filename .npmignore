@@ -6,5 +6,6 @@
 .travis.yml
 .editorconfig
 .mailmap
+eslint.config.mjs
 **/project.xcworkspace/
 **/xcuserdata/
