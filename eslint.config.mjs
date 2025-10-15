@@ -46,6 +46,7 @@ export default defineConfig([globalIgnores(["**/*.ts"]), {
         parser: babelParser,
         ecmaVersion: 5,
         sourceType: "commonjs",
+		requireConfigFile: false,
 
         parserOptions: {
             ecmaFeatures: {
