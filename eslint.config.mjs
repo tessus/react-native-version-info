@@ -41,12 +41,12 @@ export default defineConfig([globalIgnores(["**/*.ts"]), {
             XMLHttpRequest: false,
             pit: false,
             FormData: true,
+			requireConfigFile: false,
         },
 
         parser: babelParser,
         ecmaVersion: 5,
         sourceType: "commonjs",
-		requireConfigFile: false,
 
         parserOptions: {
             ecmaFeatures: {
